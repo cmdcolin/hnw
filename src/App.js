@@ -32,12 +32,13 @@ function App() {
       t += 0.001
       ctx.setTransform(
         1,
-        Math.sin(t),
-        Math.sin(t),
+        Math.sin(Math.sin(cohmult / 10000)),
+        Math.sin(Math.sin(cohmult / 10000)),
         1,
-        Math.random(),
-        Math.random(),
+        0,
+        0,
       )
+      ctx.rotate(t)
       for (let i = 0; i < 1000; i++) {
         if (i % 100 === 0) {
           ctx.fillStyle = Color(randomColor())
