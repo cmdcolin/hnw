@@ -30,14 +30,7 @@ function App() {
     let t = 0
     function fill() {
       t += 0.001
-      ctx.setTransform(
-        1,
-        Math.sin(Math.sin(cohmult / 10000)),
-        Math.sin(Math.sin(cohmult / 10000)),
-        1,
-        0,
-        0,
-      )
+      ctx.setTransform(1, Math.sin(t), Math.sin(t), 1, width / 2, height / 2)
       ctx.rotate(t)
       for (let i = 0; i < 1000; i++) {
         if (i % 100 === 0) {
@@ -46,8 +39,8 @@ function App() {
             .desaturate(currsat)
         }
         ctx.fillRect(
-          Math.random() * (width + 100) - 100,
-          Math.random() * (height + 100) - 100,
+          Math.random() * (width + 100) - (width + 200) / 2,
+          Math.random() * (height + 100) - (height + 200) / 2,
           1 * Math.random() * cowidth,
           coheight * Math.random() * cohmult,
         )

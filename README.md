@@ -1,9 +1,10 @@
-# hnw
+# interaction shadow
 
 an audiovisual harsh noise wall
 
 ![](img/1.png)
 
-https://cmdcolin.github.io/hnw/
+https://cmdcolin.github.io/interaction_shadow/
 
-audio made using rat pedal in feedback loop + yamaha dx21 with digidelay
+audio recorded 11/12/21
+rat pedal+no-input feedback+yamaha dx21+digidelay
