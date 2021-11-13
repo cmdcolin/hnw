@@ -68,7 +68,17 @@ function App() {
 
     fill()
   }, [])
-  return <canvas ref={ref} style={{ width: '100%', height: '100%' }} />
+  return (
+    <div style={{ position: 'relative' }}>
+      <canvas ref={ref} style={{ width: '100%', height: '100%' }} />
+      <audio controls style={{ position: 'absolute', right: 0, top: 0 }}>
+        <source
+          src="https://s3.us-east-2.amazonaws.com/myloveydove.com/211112_00.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </div>
+  )
 }
 
 export default App
